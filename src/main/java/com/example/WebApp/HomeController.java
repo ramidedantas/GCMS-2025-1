@@ -68,11 +68,7 @@ public class HomeController {
   
   @RequestMapping("/madan")  
   public @ResponseBody String greetingMadan() {  
-  return "Hello, Mádan!";  
+  return "Hello, Mádan F.!";  
   }
   
-  @RequestMapping("/hotfixmadan")
-  public @ResponseBody String greetingHotfixmadan() {
-    return "Hello, Mádan Hotfix!";
-  }
 }  
