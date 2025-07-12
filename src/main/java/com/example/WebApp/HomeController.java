@@ -70,4 +70,9 @@ public class HomeController {
   public @ResponseBody String greetingMadan() {  
   return "Hello, Mádan!";  
   }
+  
+  @RequestMapping("/hotfixmadan")
+  public @ResponseBody String greetingHotfixmadan() {
+    return "Hello, Mádan Hotfix!";
+  }
 }  
