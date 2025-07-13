@@ -5,16 +5,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody; 
  
 @Controller 
-public class HomeController { 
- 
-  @RequestMapping("/") 
-  public @ResponseBody String greeting() { 
-    return "Hello, World!!!"; 
-  } 
-  
+public class HomeController {
+
+  @RequestMapping("/")
+  public @ResponseBody String greeting() {
+    return "Hello, World!!!";
+  }
+
   @RequestMapping("/ramide")
-  public @ResponseBody String greetingRamide() { 
-    return "Hello, Ramide!"; 
+  public @ResponseBody String greetingRamide() {
+    return "Hello, Ramide!";
   }
 
   @RequestMapping("/intellij")
@@ -22,9 +22,9 @@ public class HomeController {
     return "Hello, Intellij!";
   }
 
-  @RequestMapping("/eclipse") 
-  public @ResponseBody String greetingEclipse() { 
-    return "Hello, Eclipse!"; 
+  @RequestMapping("/eclipse")
+  public @ResponseBody String greetingEclipse() {
+    return "Hello, Eclipse!";
   }
 
   @RequestMapping("/main")
@@ -58,26 +58,24 @@ public class HomeController {
   }
 
   @RequestMapping("/ednaldobarbosa")
-  public @ResponseBody String greetingEdnaldo() {return "Hello, Ednaldo!?!?";}
-  
-  
+  public @ResponseBody String greetingEdnaldo() {
+    return "Hello, Ednaldo!?!?";
+  }
+
+
   @RequestMapping("/jorge")
   public @ResponseBody String greetingJorge() {
     return "Hello, Jorge!?!?";
   }
-  
-  @RequestMapping("/madan")  
-  public @ResponseBody String greetingMadan() {  
-  return "Hello, Mádan!";  
+
+  @RequestMapping("/madan")
+  public @ResponseBody String greetingMadan() {
+    return "Hello, Mádan!";
   }
 
   @RequestMapping("/thamires")
-  public @ResponseBody String greetingThamires() {
-<<<<<<< HEAD
-    return "Hello, Thamires Fernandes!";
-=======
-    return "Hello conflict, Thamires!";
->>>>>>> 02148caaef38564a0d9a4723564ee7dfbe47e8d6
+  public @ResponseBody String greetingthamires() {
+    return "Hello, Thamires!";
   }
 
-  }
+}
