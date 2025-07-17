@@ -73,3 +73,4 @@ class WebAppApplicationTests {
             .andExpect(content()
                     .string(containsString("Hello, thamires!")));
   }
+}
