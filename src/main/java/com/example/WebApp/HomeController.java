@@ -88,8 +88,11 @@ public class HomeController {
   }
 
   @RequestMapping("/helena_branch")
-  public @ResponseBody String greetinghelenaBranch() {
-    return "Hello, Helena Branch!";
+  public @ResponseBody String greetinghelenaBranch() {return "Hello, Helena Branch!"; }
+
+  @RequestMapping("/helena_fork")
+  public @ResponseBody String greetingHelenaFork() {
+    return "Hello, Helena Fork!";
   }
 
 }
