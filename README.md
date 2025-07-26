@@ -22,3 +22,4 @@ Coloque seu nome abaixo se você é um dos colaboradores do repositório:
 * Túlio Bernardino (@t-bernardino)
 * Bruno Henrique de Araújo Souza (@brunohasouza)
 * David Esdras Ferreira da Silva (@DavidEsdrs)
+* Ana Letícia Ribeiro da Costa (@analeticiarc)
