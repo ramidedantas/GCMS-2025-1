@@ -91,5 +91,10 @@ public class HomeController {
   public @ResponseBody String greetinghelenaBranch() {
     return "Hello, Helena Branch!";
   }
+  
+  @RequestMapping("/thayna_fork")
+  public @ResponseBody String greetingThaynaFork() {
+    return "Hello, endpoint novo pra fork!";
+  }
 
 }
