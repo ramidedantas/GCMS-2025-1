@@ -99,6 +99,11 @@ public class HomeController {
   public @ResponseBody String greetingHelenaFork() {
     return "Hello, Helena Fork!";
   }
+  
+  @RequestMapping("/thayna_fork")
+  public @ResponseBody String greetingThaynaFork() {
+    return "Hello, endpoint novo pra fork!";
+  }
 
   @RequestMapping("/bruno-souza")
   public @ResponseBody String greetingBrunoSouza() {
