@@ -100,3 +100,9 @@ public class HomeController {
     return "Hello, Bruno Souza!?!?";
   }
 }
+
+@RequestMapping("/Emilly")
+public @ResponseBody String greetingEmilly() {
+return "Hello, Emilly!?!?";
+}
+
