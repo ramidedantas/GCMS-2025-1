@@ -99,10 +99,10 @@ public class HomeController {
   public @ResponseBody String greetingBrunoSouza() {
     return "Hello, Bruno Souza!?!?";
   }
-}
 
-@RequestMapping("/Emilly")
-public @ResponseBody String greetingEmilly() {
-return "Hello, Emilly!?!?";
-}
 
+   @RequestMapping("/Emilly")
+   public @ResponseBody String greetingEmilly() {
+   return "Hello, Emilly!?!?";
+   }
+}
