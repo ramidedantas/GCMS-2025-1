@@ -125,4 +125,9 @@ public class HomeController {
    public @ResponseBody String greetingTassio() {
     return "Hello, Tassio!?!?";
   }
+
+   @RequestMapping("/tassio_branch")
+  public @ResponseBody String greetingTassioBranch() {
+    return "Hello, Tassio Branch!";
+  }
 }
