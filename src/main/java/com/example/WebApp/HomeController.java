@@ -1,6 +1,6 @@
 package com.example.WebApp;
 
-import org.springframework.stereotype.Controller; 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping; 
 import org.springframework.web.bind.annotation.ResponseBody; 
  
@@ -119,6 +119,11 @@ public class HomeController {
    @RequestMapping("/David")
    public @ResponseBody String greetingDavid() {
    return "Hello, David!?!?";
+   }
+
+   @RequestMapping("/David-Esdras")
+   public @ResponseBody String greetingDavidBranch() {
+   return "Hello, David Esdras!?!?";
    }
 
    @RequestMapping("/Tassio")
