@@ -1,20 +1,20 @@
 package com.example.WebApp;
 
-import org.springframework.stereotype.Controller; 
-import org.springframework.web.bind.annotation.RequestMapping; 
-import org.springframework.web.bind.annotation.ResponseBody; 
- 
-@Controller 
-public class HomeController { 
- 
-  @RequestMapping("/") 
-  public @ResponseBody String greeting() { 
-    return "Hello, World!!!"; 
-  } 
-  
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+@Controller
+public class HomeController {
+
+  @RequestMapping("/")
+  public @ResponseBody String greeting() {
+    return "Hello, World!!!";
+  }
+
   @RequestMapping("/ramide")
-  public @ResponseBody String greetingRamide() { 
-    return "Hello, Ramide!"; 
+  public @ResponseBody String greetingRamide() {
+    return "Hello, Ramide!";
   }
 
   @RequestMapping("/intellij")
@@ -22,9 +22,9 @@ public class HomeController {
     return "Hello, Intellij!";
   }
 
-  @RequestMapping("/eclipse") 
-  public @ResponseBody String greetingEclipse() { 
-    return "Hello, Eclipse!"; 
+  @RequestMapping("/eclipse")
+  public @ResponseBody String greetingEclipse() {
+    return "Hello, Eclipse!";
   }
 
   @RequestMapping("/main")
@@ -58,9 +58,10 @@ public class HomeController {
   }
 
   @RequestMapping("/ednaldobarbosa")
-  public @ResponseBody String greetingEdnaldo() {return "Hello, Ednaldo!?!?";}
-  
-  
+  public @ResponseBody String greetingEdnaldo() {
+    return "Hello, Ednaldo!?!?";
+  }
+
   @RequestMapping("/jorge")
   public @ResponseBody String greetingJorge() {
     return "Hello, Jorge!?!?";
@@ -70,18 +71,17 @@ public class HomeController {
   public @ResponseBody String greetingJorgeBranch() {
     return "Hello, Jorge_Branch!";
   }
-  
-  @RequestMapping("/madan")  
-  public @ResponseBody String greetingMadan() {  
-  return "Hello, Mádan!";  
-  }
 
+  @RequestMapping("/madan")
+  public @ResponseBody String greetingMadan() {
+    return "Hello, Mádan!";
+  }
 
   @RequestMapping("/thamires")
   public @ResponseBody String greetingThamires() {
     return "Hello, Thamires!";
   }
-  
+
   @RequestMapping("/thayna")
   public @ResponseBody String greetingThayna() {
     return "Hello, Thayna BRANCH NOVA!";
@@ -93,13 +93,15 @@ public class HomeController {
   }
 
   @RequestMapping("/helena_branch")
-  public @ResponseBody String greetinghelenaBranch() {return "Hello, Helena Branch!"; }
+  public @ResponseBody String greetinghelenaBranch() {
+    return "Hello, Helena Branch!";
+  }
 
   @RequestMapping("/helena_fork")
   public @ResponseBody String greetingHelenaFork() {
     return "Hello, Helena Fork!";
   }
-  
+
   @RequestMapping("/thayna_fork")
   public @ResponseBody String greetingThaynaFork() {
     return "Hello, endpoint novo pra fork!";
@@ -110,23 +112,22 @@ public class HomeController {
     return "Hello, Bruno Souza!?!?";
   }
 
+  @RequestMapping("/Emilly")
+  public @ResponseBody String greetingEmilly() {
+    return "Hello, Emilly!?!?";
+  }
 
-   @RequestMapping("/Emilly")
-   public @ResponseBody String greetingEmilly() {
-   return "Hello, Emilly!?!?";
-   }
+  @RequestMapping("/David")
+  public @ResponseBody String greetingDavid() {
+    return "Hello, David!?!?";
+  }
 
-   @RequestMapping("/David")
-   public @ResponseBody String greetingDavid() {
-   return "Hello, David!?!?";
-   }
-
-   @RequestMapping("/Tassio")
-   public @ResponseBody String greetingTassio() {
+  @RequestMapping("/Tassio")
+  public @ResponseBody String greetingTassio() {
     return "Hello, Tassio!?!?";
   }
 
-   @RequestMapping("/tassio_branch")
+  @RequestMapping("/tassio_branch")
   public @ResponseBody String greetingTassioBranch() {
     return "Hello, Tassio Branch!";
   }
