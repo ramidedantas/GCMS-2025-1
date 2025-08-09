@@ -72,7 +72,7 @@ public class HomeController {
 
   @RequestMapping("/jorge_fork")
   public @ResponseBody String greetingJorgeFork() {
-    return "Hello, Jorge_Fork!";
+    return "Hello, Jorge Fork!";
   }
 
   @RequestMapping("/madan")  
