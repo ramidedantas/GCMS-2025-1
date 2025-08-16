@@ -144,4 +144,9 @@ public class HomeController {
   public @ResponseBody String greetingTassioFork() {
     return "Hello, Tassio Fork!!";
   }
+  
+  @RequestMapping("/bruno-souza-fork")
+  public @ResponseBody String greetingBrunoSouzaFork() {
+    return "Hello, Bruno Souza (fork)!";
+  }
 }
