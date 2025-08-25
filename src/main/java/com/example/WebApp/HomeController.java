@@ -125,6 +125,11 @@ public class HomeController {
    return "Hello, David!?!?";
    }
 
+   @RequestMapping("/AnaLeticia")
+   public @ResponseBody String greetingAnaLeticia() {
+   return "Hello, Ana Leticia!?!?";
+   }
+
    @RequestMapping("/David-Esdras")
    public @ResponseBody String greetingDavidBranch() {
    return "Hello, David Esdras!?!?";

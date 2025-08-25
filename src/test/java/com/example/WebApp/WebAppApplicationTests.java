@@ -120,5 +120,13 @@ class WebAppApplicationTests {
             .andExpect(content()
                     .string(containsString("Hello, David Esdras!?!?")));
   }
-  
+
+  @Test
+  public void shouldReturnAnaLeticia() throws Exception {
+    this.mockMvc.perform(get("/AnaLeticia"))
+            .andDo(print()).andExpect(status().isOk())
+            .andExpect(content()
+                    .string(containsString("Hello, Ana Leticia!?!?")));
+  }
+
 }
