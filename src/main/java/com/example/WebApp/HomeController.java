@@ -130,6 +130,11 @@ public class HomeController {
    return "Hello, Ana Leticia!?!?";
    }
 
+   @RequestMapping("/ana_leticia_branch")
+  public @ResponseBody String greetingAnaLeticiaBranch() {
+    return "Hello, Ana Leticia Branch!";
+  }
+
    @RequestMapping("/David-Esdras")
    public @ResponseBody String greetingDavidBranch() {
    return "Hello, David Esdras!?!?";
