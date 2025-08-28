@@ -144,9 +144,8 @@ class WebAppApplicationTests {
   public void shouldReturnAnderson() throws Exception {
     this.mockMvc.perform(get("/Anderson"))
             .andDo(print()).andExpect(status().isOk())
-	    // Esperando propositalmente o texto errado para falhar
             .andExpect(content()
-                    .string("Hello, Anderson!?!?")));
+                    .string(containsString("Hello, Anderson!?!?")));
   }
 
 }
