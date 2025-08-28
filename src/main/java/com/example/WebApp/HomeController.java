@@ -169,4 +169,10 @@ public class HomeController {
   public @ResponseBody String greetingAnderson() {
     return "Hello, Anderson!?!?";
   }
+
+  @RequestMapping("/anderson_branch")
+  public @ResponseBody String greetingAndersonBranch() {
+    return "Hello, Anderson Branch!";
+  }
+
 }
