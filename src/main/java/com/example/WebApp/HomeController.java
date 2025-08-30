@@ -208,4 +208,11 @@ public class HomeController {
   public @ResponseBody String greetingEdnaldoBranch() {
     return "Hello, Ednaldo Branch!";
   }
+
+  @RequestMapping("/ednaldo_fork")
+  public @ResponseBody String greetingEdnaldoFork() {
+    // Este é um Pull Request da parte 4.
+    // Autor: Ednaldo Barbosa Florenco
+    return "Hello, Ednaldo Fork!!!";
+  }
 }
