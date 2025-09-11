@@ -161,6 +161,14 @@ public void shouldReturnClara() throws Exception {
             .string(containsString("Hello, Nathalia!?!?")));
 }
 
+@Test
+public void shouldReturnClara() throws Exception {
+	this.mockMvc.perform(get("/Nathalia_Branch"))
+    .andDo(print()).andExpect(status().isOk())
+    .andExpect(content()
+            .string(containsString("Hello, Nathalia_Branch!?!?")));
+}
+
 
 
 
