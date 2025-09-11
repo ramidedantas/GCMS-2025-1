@@ -215,4 +215,10 @@ public class HomeController {
     // Autor: Ednaldo Barbosa Florenco
     return "Hello, Ednaldo Fork!!!";
   }
+  
+  @RequestMapping("/Nathalia")
+  public @ResponseBody String greetingNathalia() {
+      return "Hello, Nathalia!?!?";
+  }
+
 }
