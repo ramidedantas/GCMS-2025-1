@@ -34,7 +34,18 @@ class WebAppApplicationTests {
         .andDo(print()).andExpect(status().isOk()) 
         .andExpect(content() 
           .string(containsString("Hello, Ramide!"))); 
-  }  
+  }
+
+
+
+  @Test
+  public void shouldReturnJose() throws Exception {
+    this.mockMvc.perform(get("/jose"))
+            .andDo(print()).andExpect(status().isOk())
+            .andExpect(content()
+                    .string(containsString("Hello, José!")));
+  }
+
 
   @Test
   public void shouldReturnIsabelly() throws Exception {
@@ -46,7 +57,7 @@ class WebAppApplicationTests {
 
   @Test
   public void shouldReturnEdnaldo() throws Exception {
-    this.mockMvc.perform(get("/Ednaldo"))
+    this.mockMvc.perform(get("/ednaldobarbosa"))
             .andDo(print()).andExpect(status().isOk())
             .andExpect(content()
                     .string(containsString("Hello, Ednaldo!?!?")));
@@ -71,5 +82,95 @@ class WebAppApplicationTests {
     this.mockMvc.perform(get("/thamires"))
             .andDo(print()).andExpect(status().isOk())
             .andExpect(content()
-                    .string(containsString("Hello, thamires!")));
+                    .string(containsString("Hello, Thamires!")));
   }
+  
+  @Test 
+  public void shouldReturnThayna() throws Exception { 
+    this.mockMvc.perform(get("/thayna")) 
+        .andDo(print()).andExpect(status().isOk()) 
+        .andExpect(content() 
+          .string(containsString("Hello, Thayna BRANCH NOVA!"))); 
+  }
+
+  @Test
+  public void shouldReturnHelena() throws Exception {
+    this.mockMvc.perform(get("/helena"))
+            .andDo(print()).andExpect(status().isOk())
+            .andExpect(content()
+                    .string(containsString("Hello, Maria Helena!")));
+  }
+
+  @Test
+  public void shouldReturnBruno() throws Exception {
+    this.mockMvc.perform(get("/bruno-souza"))
+            .andDo(print()).andExpect(status().isOk())
+            .andExpect(content()
+                    .string(containsString("Hello, Bruno Souza!?!?")));
+  }
+  @Test
+  public void shouldReturnEmilly() throws Exception {
+    this.mockMvc.perform(get("/Emilly"))
+            .andDo(print()).andExpect(status().isOk())
+            .andExpect(content()
+                    .string(containsString("Hello, Emilly!?!?")));
+  }
+
+  @Test
+  public void shouldReturnDavid() throws Exception {
+    this.mockMvc.perform(get("/David"))
+            .andDo(print()).andExpect(status().isOk())
+            .andExpect(content()
+                    .string(containsString("Hello, David!?!?")));
+  }
+
+  @Test
+  public void shouldReturnDavidBranch() throws Exception {
+    this.mockMvc.perform(get("/David-Esdras"))
+            .andDo(print()).andExpect(status().isOk())
+            .andExpect(content()
+                    .string(containsString("Hello, David Esdras!?!?")));
+  }
+
+  @Test
+  public void shouldReturnAnaLeticia() throws Exception {
+    this.mockMvc.perform(get("/AnaLeticia"))
+            .andDo(print()).andExpect(status().isOk())
+            .andExpect(content()
+                    .string(containsString("Hello, Ana Leticia!?!?")));
+  }
+
+  @Test
+  public void shouldReturnAnderson() throws Exception {
+    this.mockMvc.perform(get("/Anderson"))
+            .andDo(print()).andExpect(status().isOk())
+            .andExpect(content()
+                    .string(containsString("Hello, Anderson!?!?")));
+  }
+  @Test
+  public void shouldReturnClara() throws Exception {
+    this.mockMvc.perform(get("/clara"))
+            .andDo(print()).andExpect(status().isOk())
+            .andExpect(content()
+                    .string(containsString("Hello, Clara!?!?")));
+@Test
+public void shouldReturnClara() throws Exception {
+	this.mockMvc.perform(get("/Nathalia"))
+    .andDo(print()).andExpect(status().isOk())
+    .andExpect(content()
+            .string(containsString("Hello, Nathalia!?!?")));
+}
+
+@Test
+public void shouldReturnClara() throws Exception {
+	this.mockMvc.perform(get("/Nathalia_Branch"))
+    .andDo(print()).andExpect(status().isOk())
+    .andExpect(content()
+            .string(containsString("Hello, Nathalia_Branch!?!?")));
+}
+
+
+
+
+  }
+}
