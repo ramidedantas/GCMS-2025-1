@@ -103,6 +103,15 @@ public class HomeController {
     return "Hello, Thamires!";
   }
 
+  @RequestMapping("/thamires_fork")
+  public @ResponseBody String greetingThamiresFork() {
+    /*
+    * PR da parte 4
+    * Autor: Thamires Fernandes
+    */
+    return "Hello, Thamires Fork!";
+  }
+
   @RequestMapping("/thayna")
   public @ResponseBody String greetingThayna() {
     return "Hello, Thayna BRANCH NOVA!";
